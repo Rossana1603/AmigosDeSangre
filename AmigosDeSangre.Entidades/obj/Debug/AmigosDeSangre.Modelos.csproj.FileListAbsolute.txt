@@ -1,0 +1,10 @@
+C:\Users\Rossana\Downloads\AmigosDeSangre\AmigosDeSangre.Models\bin\Debug\AmigosDeSangre.Models.dll
+C:\Users\Rossana\Downloads\AmigosDeSangre\AmigosDeSangre.Models\bin\Debug\AmigosDeSangre.Models.pdb
+C:\Users\Rossana\Downloads\AmigosDeSangre\AmigosDeSangre.Models\obj\Debug\AmigosDeSangre.Modelos.csprojResolveAssemblyReference.cache
+C:\Users\Rossana\Downloads\AmigosDeSangre\AmigosDeSangre.Models\obj\Debug\AmigosDeSangre.Models.dll
+C:\Users\Rossana\Downloads\AmigosDeSangre\AmigosDeSangre.Models\obj\Debug\AmigosDeSangre.Models.pdb
+C:\Users\Rossana\Downloads\AmigosDeSangre\AmigosDeSangre.Modelos\bin\Debug\AmigosDeSangre.Modelos.dll
+C:\Users\Rossana\Downloads\AmigosDeSangre\AmigosDeSangre.Modelos\bin\Debug\AmigosDeSangre.Modelos.pdb
+C:\Users\Rossana\Downloads\AmigosDeSangre\AmigosDeSangre.Modelos\obj\Debug\AmigosDeSangre.Modelos.dll
+C:\Users\Rossana\Downloads\AmigosDeSangre\AmigosDeSangre.Modelos\obj\Debug\AmigosDeSangre.Modelos.pdb
+C:\Users\Rossana\Downloads\AmigosDeSangre\AmigosDeSangre.Modelos\obj\Debug\AmigosDeSangre.Modelos.csprojResolveAssemblyReference.cache

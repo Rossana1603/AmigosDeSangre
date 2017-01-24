@@ -1,0 +1,14 @@
+C:\Users\Rossana\Downloads\AmigosDeSangre\AmigosDeSangre.Datos\bin\Release\AmigosDeSangre.Datos.dll.config
+C:\Users\Rossana\Downloads\AmigosDeSangre\AmigosDeSangre.Datos\bin\Release\AmigosDeSangre.Datos.dll
+C:\Users\Rossana\Downloads\AmigosDeSangre\AmigosDeSangre.Datos\bin\Release\AmigosDeSangre.Datos.pdb
+C:\Users\Rossana\Downloads\AmigosDeSangre\AmigosDeSangre.Datos\bin\Release\AutoMapper.dll
+C:\Users\Rossana\Downloads\AmigosDeSangre\AmigosDeSangre.Datos\bin\Release\EntityFramework.dll
+C:\Users\Rossana\Downloads\AmigosDeSangre\AmigosDeSangre.Datos\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Rossana\Downloads\AmigosDeSangre\AmigosDeSangre.Datos\bin\Release\AutoMapper.xml
+C:\Users\Rossana\Downloads\AmigosDeSangre\AmigosDeSangre.Datos\bin\Release\EntityFramework.xml
+C:\Users\Rossana\Downloads\AmigosDeSangre\AmigosDeSangre.Datos\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Rossana\Downloads\AmigosDeSangre\AmigosDeSangre.Datos\obj\Release\AmigosDeSangre.Datos.csprojResolveAssemblyReference.cache
+C:\Users\Rossana\Downloads\AmigosDeSangre\AmigosDeSangre.Datos\obj\Release\AmigosDeSangre.Datos.Migrations.InitialCreate.resources
+C:\Users\Rossana\Downloads\AmigosDeSangre\AmigosDeSangre.Datos\obj\Release\AmigosDeSangre.Datos.csproj.GenerateResource.Cache
+C:\Users\Rossana\Downloads\AmigosDeSangre\AmigosDeSangre.Datos\obj\Release\AmigosDeSangre.Datos.dll
+C:\Users\Rossana\Downloads\AmigosDeSangre\AmigosDeSangre.Datos\obj\Release\AmigosDeSangre.Datos.pdb
