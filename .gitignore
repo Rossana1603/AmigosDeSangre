@@ -1,1 +1,12 @@
 packages/
+.vs
+*.cache
+node_modules/
+AmigosDeSangre/obj/Debug/
+AmigosDeSangre.Datos/obj/Debug/
+AmigosDeSangre.Entidades/obj/Debug/
+AmigosDeSangre.Servicios/obj/Debug/
+.gitinore
+.cache
+Debug/
+obj/

@@ -1,0 +1,22 @@
+@import "./_scss/colors";
+
+html{
+    body{
+        background: #EEEEF1;
+    }
+}
+// styles applied on :host are applied on the current component, "app" in this case
+:host {
+  display: block;
+}
+
+.space{
+  padding-top: 60px;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.8em;
+}
+
+

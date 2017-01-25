@@ -1,0 +1,4 @@
+[
+    { "name": "jquery", "url": "jquery-1.12.4.min.js" },
+    { "name": "jquery-ui", "url": "ui/1.12.1/jquery-ui.min.js" }
+]

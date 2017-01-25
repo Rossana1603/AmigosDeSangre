@@ -1,0 +1,7 @@
+{
+    "": "https://code.jquery.com",
+    "local": "https://code.jquery.com",
+    "dev": "https://code.jquery.com",
+    "qa": "https://urlqa.net",
+    "prod": "https://urlprod.net"
+}

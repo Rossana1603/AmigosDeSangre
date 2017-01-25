@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<% if(htmlWebpackPlugin.options.environment == "local" || htmlWebpackPlugin.options.environment == ""){ %>
+    <base href="/" />
+<% }else{ %>
+<base href="./" />
+<% } %>
+    <title>Amigos de Sangre</title>
+      <% for(var i = 0; i < htmlWebpackPlugin.options.cssincludes.length; i++) { %>
+            <link href="<%= htmlWebpackPlugin.options.environmentUrl %>/<%= htmlWebpackPlugin.options.cssincludes[i].url %>"
+             rel="stylesheet" type="text/css" /><% } %>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+ 
+<body>
+   
+    <div class="ng2begin">
+        <my-app>Loading...</my-app>
+    </div>
+
+       <% for(var i = 0; i < htmlWebpackPlugin.options.jsincludes.length; i++) { %>
+            <script src="<%= htmlWebpackPlugin.options.environmentUrl %>/<%= htmlWebpackPlugin.options.jsincludes[i].url %>" 
+            type="text/javascript" ></script><% } %>
+</body>
+</html>

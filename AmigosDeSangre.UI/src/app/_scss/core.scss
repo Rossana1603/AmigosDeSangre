@@ -1,0 +1,19 @@
+/***********************Core styles in SaSS***************************/
+@import "./colors";
+
+body {
+    margin:0;
+    padding:0; 
+    color:#fff;
+    font-family: Helvetica, Arial, Verdana, sans-serif;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    text-rendering: auto;
+    font-weight: normal;
+    font-size:13px;
+}  
+
+a {text-decoration: none;
+    color: $blue;
+    cursor: pointer;}
