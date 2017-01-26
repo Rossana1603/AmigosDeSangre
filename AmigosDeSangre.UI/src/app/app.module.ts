@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
 import { routing, appRoutingProviders } from './app.routing';
 
 // Services
-import { AlertComponent } from './_directives/index';
+import { AlertComponent } from './alert/index';
 import { AlertService, AuthenticationService, UserService } from './_services/index';
 
 // Components for module A
@@ -23,7 +23,8 @@ import { LoginComponent } from './login/index';
     declarations: [
         AppComponent,
         HomeComponent,
-        LoginComponent
+        LoginComponent,
+        AlertComponent
     ],
     imports: [
         BrowserModule,

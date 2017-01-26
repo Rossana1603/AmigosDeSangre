@@ -5,17 +5,18 @@ import { UserService } from '../_services/index';
 //Why is it require?
 @Component({
     selector: 'my-home',
-    template: './home.component.html',
+     template: require('./home.component.html'),
 })
 export class HomeComponent implements OnInit {
     currentUser: User;
     users: User[] = [];
 
     constructor(private userService: UserService) {
-        this.currentUser = JSON.parse(localStorage.getItem('currentUser'));
+        
     }
 
     ngOnInit() {
+        this.currentUser = JSON.parse(localStorage.getItem('currentUser'));
         this.loadAllUsers();
     }
 
