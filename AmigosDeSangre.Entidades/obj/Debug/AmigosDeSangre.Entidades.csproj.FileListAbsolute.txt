@@ -1,9 +1,0 @@
-C:\Users\Rossana\Downloads\AmigosDeSangre\AmigosDeSangre.Modelos\bin\Debug\AmigosDeSangre.Entidades.dll
-C:\Users\Rossana\Downloads\AmigosDeSangre\AmigosDeSangre.Modelos\bin\Debug\AmigosDeSangre.Entidades.pdb
-C:\Users\Rossana\Downloads\AmigosDeSangre\AmigosDeSangre.Modelos\obj\Debug\AmigosDeSangre.Entidades.dll
-C:\Users\Rossana\Downloads\AmigosDeSangre\AmigosDeSangre.Modelos\obj\Debug\AmigosDeSangre.Entidades.pdb
-C:\Users\Rossana\Downloads\AmigosDeSangre\AmigosDeSangre.Entidades\bin\Debug\AmigosDeSangre.Entidades.dll
-C:\Users\Rossana\Downloads\AmigosDeSangre\AmigosDeSangre.Entidades\bin\Debug\AmigosDeSangre.Entidades.pdb
-C:\Users\Rossana\Downloads\AmigosDeSangre\AmigosDeSangre.Entidades\obj\Debug\AmigosDeSangre.Entidades.csprojResolveAssemblyReference.cache
-C:\Users\Rossana\Downloads\AmigosDeSangre\AmigosDeSangre.Entidades\obj\Debug\AmigosDeSangre.Entidades.dll
-C:\Users\Rossana\Downloads\AmigosDeSangre\AmigosDeSangre.Entidades\obj\Debug\AmigosDeSangre.Entidades.pdb

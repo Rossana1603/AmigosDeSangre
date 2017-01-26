@@ -1,5 +1,0 @@
-C:\Users\Rossana\Downloads\AmigosDeSangre\AmigosDeSangre.Models\bin\Debug\AmigosDeSangre.Models.dll
-C:\Users\Rossana\Downloads\AmigosDeSangre\AmigosDeSangre.Models\bin\Debug\AmigosDeSangre.Models.pdb
-C:\Users\Rossana\Downloads\AmigosDeSangre\AmigosDeSangre.Models\obj\Debug\AmigosDeSangre.Models.csprojResolveAssemblyReference.cache
-C:\Users\Rossana\Downloads\AmigosDeSangre\AmigosDeSangre.Models\obj\Debug\AmigosDeSangre.Models.dll
-C:\Users\Rossana\Downloads\AmigosDeSangre\AmigosDeSangre.Models\obj\Debug\AmigosDeSangre.Models.pdb
