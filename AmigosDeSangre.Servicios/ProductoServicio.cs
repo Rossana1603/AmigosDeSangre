@@ -13,11 +13,11 @@ namespace AmigosDeSangre.Servicios
 {
     public class ProductoServicio : IProductoServicio
     {
-        private readonly RepositorioProducto _repositorioProducto;
+        private readonly IRepositorioProducto _repositorioProducto;
 
-        public ProductoServicio()
+        public ProductoServicio(IRepositorioProducto repositorioProducto)
         {
-            _repositorioProducto = new RepositorioProducto(new AmigosDeSangreContext());
+            _repositorioProducto = repositorioProducto;
         }
         public IEnumerable<ProductoEntidad> ObtenerProductos()
         {

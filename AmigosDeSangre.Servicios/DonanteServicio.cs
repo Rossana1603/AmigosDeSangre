@@ -12,11 +12,11 @@ namespace AmigosDeSangre.Servicios
 {
     public class DonanteServicio : IDonanteServicio
     {
-        private readonly RepositorioDonante _repositorioDonante;
+        private readonly IRepositorioDonante _repositorioDonante;
 
-        public DonanteServicio()
+        public DonanteServicio(IRepositorioDonante repositorioDonante)
         {
-            _repositorioDonante = new RepositorioDonante(new AmigosDeSangreContext());
+            _repositorioDonante = repositorioDonante;
         }
 
         public int InsertarDonante(DonanteEntidad donanteEntidad)

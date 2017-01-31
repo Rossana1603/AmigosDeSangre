@@ -10,16 +10,16 @@ namespace AmigosDeSangre.Datos.Repositorios
 {
     public class RepositorioProducto : IRepositorioProducto
     {
-        private AmigosDeSangreContext context;
+        private readonly AmigosDeSangreContext _dbContext;
 
-        public RepositorioProducto(AmigosDeSangreContext context)
+        public RepositorioProducto(AmigosDeSangreContext dbContext)
         {
-            this.context = context;
+            _dbContext = dbContext;
         }
 
         public IEnumerable<Producto> ObtenerProductos()
         {
-            return context.Productos.ToList();
+            return _dbContext.Productos.ToList();
             
         }
     }

@@ -13,9 +13,9 @@ namespace AmigosDeSangre.Controllers
     {
         private readonly IGrupoSanguineoServicio _grupoSanguineoServicio;
 
-        public GrupoSanguineoController()
+        public GrupoSanguineoController(IGrupoSanguineoServicio grupoSanguineoServicio)
         {
-            _grupoSanguineoServicio = new GrupoSanguineoServicio();
+            _grupoSanguineoServicio = grupoSanguineoServicio;
         }
 
         // GET api/grupos

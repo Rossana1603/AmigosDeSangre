@@ -13,9 +13,9 @@ namespace AmigosDeSangre.Controllers
     {
         private readonly ISolicitudServicio _solicitudServicio;
 
-        public SolicitudController()
+        public SolicitudController(ISolicitudServicio solicitudServicio)
         {
-            _solicitudServicio = new SolicitudServicio();
+            _solicitudServicio = solicitudServicio;
         }
 
         public int Post([FromBody] SolicitudEntidad solicitudEntidad)

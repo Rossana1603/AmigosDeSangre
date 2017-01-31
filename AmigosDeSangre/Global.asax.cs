@@ -20,6 +20,7 @@ namespace AmigosDeSangre
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             InitializeAutoMapper();
+            Bootstrapper.Initialise();
         }
         public static void InitializeAutoMapper()
         {

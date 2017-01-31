@@ -10,42 +10,42 @@ namespace AmigosDeSangre.Datos.Repositorios
 {
     public class RepositorioDonante : IRepositorioDonante
     {
-        private AmigosDeSangreContext context;
+        private readonly AmigosDeSangreContext _dbContext;
 
 
-        public RepositorioDonante(AmigosDeSangreContext context)
+        public RepositorioDonante(AmigosDeSangreContext dbContext)
         {
-            this.context = context;
+            _dbContext = dbContext;
         }
 
         public void EliminarDonante(int codigoDonante)
         {
-            Donante donante = context.Donantes.Find(codigoDonante);
-            context.Donantes.Remove(donante);
+            Donante donante = _dbContext.Donantes.Find(codigoDonante);
+            _dbContext.Donantes.Remove(donante);
         }
 
         public void InsertarDonante(Donante donante)
         {
-            context.Donantes.Add(donante);
+            _dbContext.Donantes.Add(donante);
         }
 
         public Donante ObtenerDonantePorCodigo(int codigoDonante)
         {
-            return context.Donantes.Find(codigoDonante);
+            return _dbContext.Donantes.Find(codigoDonante);
         }
 
         public IEnumerable<Donante> ObtenerDonantes()
         {
-            return context.Donantes.ToList();
+            return _dbContext.Donantes.ToList();
         }
         public void ActualizarDonante(Donante donante)
         {
-            context.Entry(donante).State = EntityState.Modified;
+            _dbContext.Entry(donante).State = EntityState.Modified;
         }
 
         public void Save()
         {
-            context.SaveChanges();
+            _dbContext.SaveChanges();
         }
 
         private bool disposed = false;
@@ -56,7 +56,7 @@ namespace AmigosDeSangre.Datos.Repositorios
             {
                 if (disposing)
                 {
-                    context.Dispose();
+                    _dbContext.Dispose();
                 }
             }
             this.disposed = true;

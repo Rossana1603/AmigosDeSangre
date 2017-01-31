@@ -14,11 +14,11 @@ namespace AmigosDeSangre.Servicios
 {
     public class SolicitudServicio : ISolicitudServicio
     {
-        private readonly RepositorioSolicitud _repositorioSolicitud;
+        private readonly IRepositorioSolicitud _repositorioSolicitud;
 
-        public SolicitudServicio()
+        public SolicitudServicio(IRepositorioSolicitud repositorioSolicitud)
         {
-            _repositorioSolicitud = new RepositorioSolicitud(new AmigosDeSangreContext());
+            _repositorioSolicitud = repositorioSolicitud;
         }
 
         public int InsertarSolicitud(SolicitudEntidad solicitudEntidad)

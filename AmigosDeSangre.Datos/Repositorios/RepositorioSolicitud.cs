@@ -10,43 +10,43 @@ namespace AmigosDeSangre.Datos.Repositorios
 {
     public class RepositorioSolicitud : IRepositorioSolicitud
     {
-        private AmigosDeSangreContext context;
+        private readonly AmigosDeSangreContext _dbContext;
 
 
-        public RepositorioSolicitud(AmigosDeSangreContext context)
+        public RepositorioSolicitud(AmigosDeSangreContext dbContext)
         {
-            this.context = context;
+            _dbContext = dbContext;
         }
 
         public void ActualizarSolicitud(Donante solicitud)
         {
-            context.Entry(solicitud).State = EntityState.Modified;
+            _dbContext.Entry(solicitud).State = EntityState.Modified;
         }
 
         public void EliminarSolicitud(int codigoSolicitud)
         {
-            Solicitud solicitud = context.Solicitudes.Find(codigoSolicitud);
-            context.Solicitudes.Remove(solicitud);
+            Solicitud solicitud = _dbContext.Solicitudes.Find(codigoSolicitud);
+            _dbContext.Solicitudes.Remove(solicitud);
         }
 
         public void InsertarSolicitud(Solicitud solicitud)
         {
-            context.Solicitudes.Add(solicitud);
+            _dbContext.Solicitudes.Add(solicitud);
         }
 
         public IEnumerable<Solicitud> ObtenerSolicitudes()
         {
-            return context.Solicitudes.ToList();
+            return _dbContext.Solicitudes.ToList();
         }
 
         public Solicitud ObtenerSolicitudPorCodigo(int codigoSolicitud)
         {
-            return context.Solicitudes.Find(codigoSolicitud);
+            return _dbContext.Solicitudes.Find(codigoSolicitud);
         }
 
         public void Save()
         {
-            context.SaveChanges();
+            _dbContext.SaveChanges();
         }
 
         private bool disposed = false;
@@ -57,7 +57,7 @@ namespace AmigosDeSangre.Datos.Repositorios
             {
                 if (disposing)
                 {
-                    context.Dispose();
+                    _dbContext.Dispose();
                 }
             }
             this.disposed = true;

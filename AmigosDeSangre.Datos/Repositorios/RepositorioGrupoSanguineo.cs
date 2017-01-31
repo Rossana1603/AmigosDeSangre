@@ -7,18 +7,18 @@ using System.Threading.Tasks;
 
 namespace AmigosDeSangre.Datos.Repositorios
 {
-    public class RepositorioGrupoSanguineo
+    public class RepositorioGrupoSanguineo : IRepositorioGrupoSanguineo
     {
-        private AmigosDeSangreContext context;
+        private readonly AmigosDeSangreContext _dbContext;
 
-        public RepositorioGrupoSanguineo(AmigosDeSangreContext context)
+        public RepositorioGrupoSanguineo(AmigosDeSangreContext dbContext)
         {
-            this.context = context;
+            _dbContext = dbContext;
         }
 
         public IEnumerable<GrupoSanguineo> ObtenerGrupos()
         {
-            return context.GrupoSanguineos.ToList();
+            return _dbContext.GrupoSanguineos.ToList();
         }
     }
 

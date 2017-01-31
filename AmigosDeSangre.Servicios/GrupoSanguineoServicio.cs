@@ -13,11 +13,11 @@ namespace AmigosDeSangre.Servicios
 {
     public class GrupoSanguineoServicio : IGrupoSanguineoServicio
     {
-        private readonly RepositorioGrupoSanguineo _repositorioGrupoSanguineo;
+        private readonly IRepositorioGrupoSanguineo _repositorioGrupoSanguineo;
 
-        public GrupoSanguineoServicio()
+        public GrupoSanguineoServicio(IRepositorioGrupoSanguineo repositorioGrupoSanguineo)
         {
-            _repositorioGrupoSanguineo = new RepositorioGrupoSanguineo(new AmigosDeSangreContext());
+            _repositorioGrupoSanguineo = repositorioGrupoSanguineo;
         }
         public IEnumerable<GrupoSanguineoEntidad> ObtenerGrupos()
         {

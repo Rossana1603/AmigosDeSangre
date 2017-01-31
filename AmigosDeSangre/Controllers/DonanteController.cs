@@ -13,9 +13,9 @@ namespace AmigosDeSangre.Controllers
     {
         private readonly IDonanteServicio _donanteServicio;
 
-        public DonanteController()
+        public DonanteController(IDonanteServicio donanteServicio)
         {
-            _donanteServicio = new DonanteServicio();
+            _donanteServicio = donanteServicio;
         }
 
         public int Post([FromBody] DonanteEntidad donanteEntidad)

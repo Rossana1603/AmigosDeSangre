@@ -14,9 +14,9 @@ namespace AmigosDeSangre.Controllers
     {
         private readonly IProductoServicio _productoServicio;
 
-        public ProductoController()
+        public ProductoController(IProductoServicio productoServicio)
         {
-            _productoServicio = new ProductoServicio();
+            _productoServicio = productoServicio;
         }
 
         // GET api/producto
