@@ -8,3 +8,6 @@ import '@angular/http';
 import '@angular/forms';
 
 import 'rxjs';
+
+import '@ng-bootstrap/ng-bootstrap';
+import 'bootstrap/scss/bootstrap.scss';

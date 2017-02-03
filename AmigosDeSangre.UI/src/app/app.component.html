@@ -1,16 +1,25 @@
 <!-- main app container -->
-<div class="jumbotron">
-    <div class="container">
-        <div class="col-sm-8 col-sm-offset-2">
-           <alert></alert>
-            <router-outlet></router-outlet>
-        </div>
-    </div>
-</div>
+<header>
 
-<!-- credits -->
-<div class="text-center">
-    <p>
-        <a target="_top">Cruz Roja Peruana</a>
-    </p>
-</div>
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#">Cruz Roja</a>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" [routerLink]="['']">Home</a>
+      <a class="nav-item nav-link" [routerLink]="['login']">login</a>
+    </div>
+  </div>
+</nav>
+</header>
+<main>
+  <div class="container space">
+       <alert></alert>
+  <router-outlet></router-outlet>
+  </div>
+</main>
+<footer>
+  <a [href]="url">Cruz Roja Peruana</a>
+</footer>

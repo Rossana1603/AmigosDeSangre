@@ -70,7 +70,9 @@
     "url-loader": "^0.5.7"
   },
   "dependencies": {
+    "@ng-bootstrap/ng-bootstrap": "^1.0.0-alpha.20",
     "angular2-infinite-scroll": "^0.2.6",
+    "bootstrap": "^4.0.0-alpha.6",
     "exports-loader": "^0.6.3",
     "moment": "^2.16.0"
   }
