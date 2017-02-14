@@ -60,7 +60,10 @@
     <Compile Include="Migrations\201612031653037_InitialCreate.Designer.cs">
       <DependentUpon>201612031653037_InitialCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modelos\CentroMedico.cs" />
+    <Compile Include="Modelos\DetalleHorario.cs" />
     <Compile Include="Modelos\GrupoSanguineo.cs" />
+    <Compile Include="Modelos\Horario.cs" />
     <Compile Include="Modelos\Producto.cs" />
     <Compile Include="Modelos\Solicitud.cs" />
     <Compile Include="Modelos\Donante.cs" />
