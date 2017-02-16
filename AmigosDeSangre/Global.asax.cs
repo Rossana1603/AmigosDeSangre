@@ -1,4 +1,5 @@
-﻿using AutoMapper;
+﻿using AmigosDeSangre.App_Start;
+using AutoMapper;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,7 +21,6 @@ namespace AmigosDeSangre
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             InitializeAutoMapper();
-            Bootstrapper.Initialise();
         }
         public static void InitializeAutoMapper()
         {

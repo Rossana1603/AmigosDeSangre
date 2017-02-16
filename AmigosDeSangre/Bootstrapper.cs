@@ -12,10 +12,11 @@ namespace AmigosDeSangre
 {
     public class Bootstrapper
     {
-        public static IUnityContainer Initialise()
+        public static IUnityContainer Initialize()
         {
             var container = BuildUnityContainer();
             DependencyResolver.SetResolver(new UnityDependencyResolver(container));
+
             return container;
         }
         private static IUnityContainer BuildUnityContainer()

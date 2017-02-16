@@ -13,6 +13,7 @@ namespace AmigosDeSangre.Areas.HelpPage.Controllers
     {
         private const string ErrorViewName = "Error";
 
+        [Microsoft.Practices.Unity.InjectionConstructor]
         public HelpController()
             : this(GlobalConfiguration.Configuration)
         {
