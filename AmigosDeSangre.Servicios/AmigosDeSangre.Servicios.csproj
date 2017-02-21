@@ -45,7 +45,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CentroMedicoServicio.cs" />
     <Compile Include="GrupoSanguineoServicio.cs" />
+    <Compile Include="ICentroMedicoServicio.cs" />
     <Compile Include="IDonanteServicio.cs" />
     <Compile Include="DonanteServicio.cs" />
     <Compile Include="IGrupoSanguineoServicio.cs" />

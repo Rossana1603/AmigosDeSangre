@@ -28,7 +28,7 @@ namespace AmigosDeSangre.Servicios
                 var solicitud = new Solicitud
                 {
                     CodigoProducto = solicitudEntidad.CodigoProducto,
-                    GrupoSanguineoCodigo = solicitudEntidad.GrupoSanguineoCodigo,
+                    GrupoSanguineoCodigo = solicitudEntidad.CodigoGrupoSanguineo,
                     NombrePaciente = solicitudEntidad.NombrePaciente,
                     EdadPaciente = solicitudEntidad.EdadPaciente,
                     UnidadesRequeridas = solicitudEntidad.UnidadesRequeridas,
