@@ -8,26 +8,26 @@ namespace AmigosDeSangre.Datos.Migrations
         public override void Up()
         {
             CreateTable(
-     "dbo.Donante",
-     c => new
-     {
-         CodigoDonante = c.Int(nullable: false, identity: true),
-         Nombres = c.String(maxLength: 150),
-         Apellidos = c.String(maxLength: 150),
-         GrupoSanguineoCodigo = c.Int(nullable: false),
-         FechaNacimiento = c.String(maxLength: 20),
-         TipoDocumento = c.String(maxLength: 50),
-         NumeroDocumento = c.String(maxLength: 16),
-         EstadoCivil = c.String(maxLength: 1),
-         Genero = c.String(maxLength: 1),
-         Telefono = c.String(maxLength: 50),
-         Domicilio = c.String(maxLength: 200),
-         Email = c.String(maxLength: 100),
-         Estado = c.Int(nullable: false),
-     })
-     .PrimaryKey(t => t.CodigoDonante)
-     .ForeignKey("dbo.GrupoSanguineo", t => t.GrupoSanguineoCodigo, cascadeDelete: true)
-     .Index(t => t.GrupoSanguineoCodigo);
+             "dbo.Donante",
+                 c => new
+                 {
+                     CodigoDonante = c.Int(nullable: false, identity: true),
+                     Nombres = c.String(maxLength: 150),
+                     Apellidos = c.String(maxLength: 150),
+                     GrupoSanguineoCodigo = c.Int(nullable: false),
+                     FechaNacimiento = c.String(maxLength: 20),
+                     TipoDocumento = c.String(maxLength: 50),
+                     NumeroDocumento = c.String(maxLength: 16),
+                     EstadoCivil = c.String(maxLength: 1),
+                     Genero = c.String(maxLength: 1),
+                     Telefono = c.String(maxLength: 50),
+                     Domicilio = c.String(maxLength: 200),
+                     Email = c.String(maxLength: 100),
+                     Estado = c.Int(nullable: false),
+                 })
+             .PrimaryKey(t => t.CodigoDonante)
+             .ForeignKey("dbo.GrupoSanguineo", t => t.GrupoSanguineoCodigo, cascadeDelete: true)
+             .Index(t => t.GrupoSanguineoCodigo);
 
             CreateTable(
                 "dbo.GrupoSanguineo",
