@@ -11,7 +11,7 @@ namespace AmigosDeSangre.Datos.Modelos
     {
         [Key]
         public int CodigoDetalleHorario { get; set; }
-        public DateTime HoraInicio { get; set; }
-        public DateTime HoraFin { get; set; }
+        public string HoraInicio { get; set; }
+        public string HoraFin { get; set; }
     }
 }

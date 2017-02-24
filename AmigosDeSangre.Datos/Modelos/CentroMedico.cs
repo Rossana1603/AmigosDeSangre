@@ -11,6 +11,7 @@ namespace AmigosDeSangre.Datos.Modelos
     {
         [Key]
         public int CodigoCentro { get; set; }
+        public int HorarioCodigo { get; set; }
         public string Descripcion { get; set; }
         public string Direccion{ get; set; }
         public bool Estado { get; set; }
