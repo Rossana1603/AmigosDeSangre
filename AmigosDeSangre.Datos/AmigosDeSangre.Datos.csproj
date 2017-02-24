@@ -76,11 +76,13 @@
     <Compile Include="Repositorios\IRepositorioCentroMedico.cs" />
     <Compile Include="Repositorios\IRepositorioGrupoSanguineo.cs" />
     <Compile Include="Repositorios\IRepositorioDonante.cs" />
+    <Compile Include="Repositorios\IRepositorioHorario.cs" />
     <Compile Include="Repositorios\IRepositorioProducto.cs" />
     <Compile Include="Repositorios\IRepositorioSolicitud.cs" />
     <Compile Include="Repositorios\RepositorioCentroMedico.cs" />
     <Compile Include="Repositorios\RepositorioDonante.cs" />
     <Compile Include="Repositorios\RepositorioGrupoSanguineo.cs" />
+    <Compile Include="Repositorios\RepositorioHorario.cs" />
     <Compile Include="Repositorios\RepositorioProducto.cs" />
     <Compile Include="Repositorios\RepositorioSolicitud.cs" />
   </ItemGroup>

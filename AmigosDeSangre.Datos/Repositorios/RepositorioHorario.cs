@@ -7,10 +7,10 @@ using AmigosDeSangre.Datos.Modelos;
 
 namespace AmigosDeSangre.Datos.Repositorios
 {
-    public class RepositorioCentroMedico : IRepositorioCentroMedico
+    public class RepositorioHorario : IRepositorioHorario
     {
         private readonly AmigosDeSangreContext _dbContext;
-        public RepositorioCentroMedico(AmigosDeSangreContext dbContext)
+        public RepositorioHorario(AmigosDeSangreContext dbContext)
         {
             _dbContext = dbContext;
         }
@@ -18,6 +18,10 @@ namespace AmigosDeSangre.Datos.Repositorios
         public IEnumerable<CentroMedico> ObtenerCentros()
         {
             return _dbContext.CentrosMedicos.ToList();
+        }
+        public IEnumerable<Horario> ObtenerHorarios()
+        {
+            return _dbContext.Horarios.ToList();
         }
     }
 }
