@@ -60,9 +60,9 @@
     <Compile Include="Migrations\201702210319471_InitialCreate.Designer.cs">
       <DependentUpon>201702210319471_InitialCreate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201702210325169_AddNewTables.cs" />
-    <Compile Include="Migrations\201702210325169_AddNewTables.Designer.cs">
-      <DependentUpon>201702210325169_AddNewTables.cs</DependentUpon>
+    <Compile Include="Migrations\201702240404177_AddNewTables.cs" />
+    <Compile Include="Migrations\201702240404177_AddNewTables.Designer.cs">
+      <DependentUpon>201702240404177_AddNewTables.cs</DependentUpon>
     </Compile>
     <Compile Include="Modelos\CentroMedico.cs" />
     <Compile Include="Modelos\DetalleHorario.cs" />
@@ -92,8 +92,8 @@
     <EmbeddedResource Include="Migrations\201702210319471_InitialCreate.resx">
       <DependentUpon>201702210319471_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201702210325169_AddNewTables.resx">
-      <DependentUpon>201702210325169_AddNewTables.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201702240404177_AddNewTables.resx">
+      <DependentUpon>201702240404177_AddNewTables.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

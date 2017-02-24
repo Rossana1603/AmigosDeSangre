@@ -13,7 +13,7 @@ namespace AmigosDeSangre.Datos.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201702210325169_AddNewTables"; }
+            get { return "201702240404177_AddNewTables"; }
         }
         
         string IMigrationMetadata.Source

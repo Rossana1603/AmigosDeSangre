@@ -11,7 +11,6 @@ namespace AmigosDeSangre.Datos.Modelos
     {
         [Key]
         public int CodigoHorario { get; set; }
-        public int DetalleHorarioCodigo { get; set; }
         public string Descripcion { get; set; }
 
         public virtual DetalleHorario DetalleHorario { get; set; }

@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using AmigosDeSangre.Entidades;
 using AmigosDeSangre.Datos.Repositorios;
+using AutoMapper;
+using AmigosDeSangre.Datos.Modelos;
 
 namespace AmigosDeSangre.Servicios
 {
@@ -18,7 +20,15 @@ namespace AmigosDeSangre.Servicios
         }
         public IEnumerable<CentroMedicoEntidad> ObtenerCentros()
         {
-            throw new NotImplementedException();
+            var centros = _repositorioCentroMedico.ObtenerCentros();
+            if (centros.Any())
+            {
+                var config =
+                    new MapperConfiguration(p => p.CreateMap<CentroMedico, CentroMedicoEntidad>());
+                var centrosModel = Mapper.Map<IEnumerable<CentroMedico>, IEnumerable<CentroMedicoEntidad>>(centros);
+                return centrosModel;
+            }
+            return null;
         }
     }
 }

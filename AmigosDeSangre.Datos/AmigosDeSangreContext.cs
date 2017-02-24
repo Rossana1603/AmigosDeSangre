@@ -20,6 +20,12 @@ namespace AmigosDeSangre.Datos
         public DbSet<Producto> Productos { get; set; }
         public DbSet<GrupoSanguineo> GrupoSanguineos { get; set; }
 
+        public DbSet<CentroMedico> CentrosMedicos { get; set; }
+
+        public DbSet<Horario> Horarios {get; set; }
+
+        public DbSet<DetalleHorario> DetalleHorarios { get; set; }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
