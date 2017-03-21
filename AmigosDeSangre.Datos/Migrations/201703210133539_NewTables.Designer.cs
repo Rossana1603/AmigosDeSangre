@@ -7,13 +7,13 @@ namespace AmigosDeSangre.Datos.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class AddNewTables : IMigrationMetadata
+    public sealed partial class NewTables : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(AddNewTables));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(NewTables));
         
         string IMigrationMetadata.Id
         {
-            get { return "201702240404177_AddNewTables"; }
+            get { return "201703210133539_NewTables"; }
         }
         
         string IMigrationMetadata.Source
