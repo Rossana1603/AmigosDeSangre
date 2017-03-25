@@ -10,6 +10,7 @@ namespace AmigosDeSangre.Entidades
     {
         public int CodigoHorario { get; set; }
         public string Descripcion { get; set; }
-        
+        public virtual DetalleHorarioEntidad DetalleHorario { get; set; }
+
     }
 }

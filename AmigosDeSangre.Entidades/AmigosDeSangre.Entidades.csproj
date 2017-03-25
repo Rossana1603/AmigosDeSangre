@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CentroMedicoEntidad.cs" />
+    <Compile Include="DetalleHorarioEntidad.cs" />
     <Compile Include="HorarioEntidad.cs" />
     <Compile Include="DonanteEntidad.cs" />
     <Compile Include="GrupoSanguineoEntidad.cs" />

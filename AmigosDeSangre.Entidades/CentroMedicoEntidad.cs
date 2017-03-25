@@ -12,5 +12,6 @@ namespace AmigosDeSangre.Entidades
         public string Descripcion { get; set; }
         public string Direccion { get; set; }   
         public bool Estado { get; set; }
+        public virtual HorarioEntidad Horario { get; set; }
     }
 }
