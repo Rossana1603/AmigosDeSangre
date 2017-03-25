@@ -11,6 +11,7 @@ namespace AmigosDeSangre
             CreateMap<GrupoSanguineo, GrupoSanguineoEntidad>();
             CreateMap<Donante, DonanteEntidad>();
             CreateMap<Solicitud, SolicitudEntidad>();
+            CreateMap<CentroMedico, CentroMedicoEntidad>();
         }
     }
 }

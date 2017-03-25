@@ -29,11 +29,13 @@ namespace AmigosDeSangre
             container.RegisterType<IProductoServicio, ProductoServicio>();
             container.RegisterType<ISolicitudServicio, SolicitudServicio>();
             container.RegisterType<IGrupoSanguineoServicio, GrupoSanguineoServicio>();
+            container.RegisterType<ICentroMedicoServicio, CentroMedicoServicio>();
 
             container.RegisterType<IRepositorioDonante, RepositorioDonante>();
             container.RegisterType<IRepositorioProducto, RepositorioProducto>();
             container.RegisterType<IRepositorioSolicitud, RepositorioSolicitud>();
             container.RegisterType<IRepositorioGrupoSanguineo, RepositorioGrupoSanguineo>();
+            container.RegisterType<IRepositorioCentroMedico, RepositorioCentroMedico>();
 
             RegisterTypes(container);
             return container;

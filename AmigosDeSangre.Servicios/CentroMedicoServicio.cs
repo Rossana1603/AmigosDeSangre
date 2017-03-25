@@ -14,12 +14,9 @@ namespace AmigosDeSangre.Servicios
     {
         private readonly IRepositorioCentroMedico _repositorioCentroMedico;
 
-        private readonly IRepositorioHorario _repositorioHorario;
-
-        public CentroMedicoServicio(IRepositorioCentroMedico repositorioCentroMedico, IRepositorioHorario repositorioHorario)
+        public CentroMedicoServicio(IRepositorioCentroMedico repositorioCentroMedico)
         {
             _repositorioCentroMedico = repositorioCentroMedico;
-            _repositorioHorario = repositorioHorario;
         }
         public IEnumerable<CentroMedicoEntidad> ObtenerCentros()
         {
@@ -29,12 +26,6 @@ namespace AmigosDeSangre.Servicios
                 var config =
                     new MapperConfiguration(p => p.CreateMap<CentroMedico, CentroMedicoEntidad>());
                 var centrosModel = Mapper.Map<IEnumerable<CentroMedico>, IEnumerable<CentroMedicoEntidad>>(centros);
-
-                var horarios = _repositorioHorario.ObtenerHorarios();
-
-                var configHorario =
-                    new MapperConfiguration(p => p.CreateMap<Horario, HorarioEntidad>());
-                var horariosModel = Mapper.Map<IEnumerable<Horario>, IEnumerable<HorarioEntidad>>(horarios);
 
                 return centrosModel;
             }
