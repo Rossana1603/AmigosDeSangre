@@ -10,7 +10,7 @@ namespace AmigosDeSangre.Entidades
     {
         public int Codigo { get; set; }
         public int CodigoProducto { get; set; }
-        public int CodigoGrupoSanguineo { get; set; }
+        public int GrupoSanguineoCodigo { get; set; }
         public string NombrePaciente { get; set; }
         public int EdadPaciente { get; set; }
         public int UnidadesRequeridas { get; set; }
